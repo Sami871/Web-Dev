@@ -23,3 +23,138 @@ li a{
 li a:hover{
     background-color: lightgreen;
 }
+video{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+} 
+.video-container{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+   
+} 
+.overlay-text{
+    position: absolute;
+    font-size: larger;
+    font-family: sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: red;
+}
+.box-container{
+    margin-top: 90px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    min-height: 100vh;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 5px; /* Space around each container */
+    border: 3px red dashed;
+    background-color: rgb(255, 255, 255);
+}
+.items-1{
+    width: 400px;
+    height: 220px;
+    border-radius: 12px;
+}
+.items-2{
+    width: 350px;
+    height: 320px;
+    border-radius: 12px; 
+}
+.items-3{
+    width: 460px;
+    height: 320px;
+    border-radius: 12px; 
+}
+.items-4{
+    width: 400px;
+    height: 250px;
+    border-radius: 12px;   
+}
+.items-5{
+    width: 350px;
+    height: 250px;
+    border-radius: 12px;
+}
+.items-6{
+    width: 460px;
+    height: 250px;
+    border-radius: 12px;  
+}
+.statement{
+    font-size: 60px;
+    font-family: 'Gill Sans', sans-serif;
+    color: rgb(5, 117, 80);
+}
+.pic{
+    margin: 0;
+    padding: 0;
+    display: flex;  
+    flex-direction: row;
+    gap: 60px;
+}
+.pic :hover {
+    opacity: 65%;
+}
+.img-container{
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+   text-align: center;
+   margin-top: 50px;
+}
+.photos{
+    width: 380px;
+    height: 250px;
+    margin: 15px;
+    padding: 10px;
+}
+.cont-video{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.fairy-0{
+    position:absolute;
+    font-size: larger;
+    font-family: sans-serif;
+    top: 20%;
+    left: 3.5%;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    color: white;
+}
+.fairy-1{
+    position: absolute;
+    top: 37%;
+    left: 3.5%;
+    color: #ffffff;
+    font-size: 30px; 
+    border-bottom: 2px solid white;
+    padding-bottom: 30px;
+}
+
+.fairy-2{
+    position: absolute;
+    top: 37%;
+    /* right: 55%; */
+    left: 50%;
+    color: #ffffff;
+    font-size: 30px;
+}
