@@ -1,75 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Web</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-     
-    <ul>
-        <img src="istockphoto-1444555722-1024x1024.jpg" alt="logo picture">
-        <li style="float: left;"><a href="#logo" >Logo</a></li>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div style="display: flex; justify-content: space-between">
+        <div><a id="logo" href="#logo">Logo</a></div>
+        <svg
+          id="hamburger"
+          class="toggle-button"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="24" height="24" fill="white" />
+          <path
+            d="M3 12h18"
+            stroke="#000"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M3 6h18"
+            stroke="#000"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M3 18h18"
+            stroke="#000"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+      <ul id="menu" class="hide">
         <li><a href="#home">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#admission">Admission</a></li>
-        <li><a href="information" >Information</a></li>
-    </ul>
-    <div class="video-container">
-    <video muted autoplay loop  width="100%" height="100%"
-    src="mov_bbb.mp4">
-    </video>
-    <div class="overlay-text">
-        <h1>This is an overlay text on the video.</h1>
-    </div>
-    </div>
-<div class="box-container">
-     <div class="items items-1">item-1</div>
-     <div class="items items-2">item-2</div>
-     <div class="items items-3">item-3</div>
-     <div class="items items-4">item-4</div>
-     <div class="items items-5">item-5</div>
-     <div class="items items-6">item-6</div>
-</div>
-<div class="statement">
-    <p>
-        under this statement there will be logos of different things.
-    </p>
-</div>
+        <li><a href="information">Information</a></li>
+      </ul>
+    </header>
 
-<div class="pic">
-   <div> <img src="image-1.png"></div>
-   <div> <img src="image-2.jpeg"></div>
-   <div> <img src="image-3.webp"></div>
-   <div> <img src="image-4.jpeg"></div>
-   <div> <img src="image-5.jpeg"></div>
-   <div> <img src="image-6.jpeg"></div>
-   <div> <img src="image-7.png"></div>
-   <div> <img src="image-8.png"></div>
-   <div> <img src="image-3.webp"></div>
-</div>
-<div class="img-container">
-    <div>
-<img src="pic-1.webp" class="photos">
-    </div>
-    <div>
-        <img  src="pic-2.webp" class="photos">
-    </div>
-    <div>
-        <img src="pic-3.webp" class="photos">
-    </div>
-</div>
-    <div class="cont-video">
-        <video src="fairy-meadows.mp4" 
-        muted autoplay> 
-        </video>
+    <!-- video section -->
+    <section class="video-container">
+      <video
+        muted
+        class="top-video"
+        autoplay
+        loop
+        width="100%"
+        src="header-video.mp4"
+      ></video>
+      <div class="overlay-text">
+        <h1>
+          Fairy Meadows is a stunning alpine destination with lush greenery,
+          crystal-clear streams, and breathtaking mountain views.Lush greenery
+          awaits you.
+        </h1>
+      </div>
+    </section>
+
+    <!-- box section -->
+    <!-- <section class="box-container">
+      <div class="items items-1">item-1</div>
+      <div class="items items-2">item-2</div>
+      <div class="items items-3">item-3</div>
+      <div class="items items-4">item-4</div>
+      <div class="items items-5">item-5</div>
+      <div class="items items-6">item-6</div>
+    </section> -->
+
+    <!-- statement section -->
+    <section class="statement">
+      <p>Under this statement there will be logos of different schools.</p>
+
+      <div class="pic">
         <div>
-        <h4 class="fairy-0">Healthy Environment</h4>
-        <p class="fairy-1">Fairy Meadows is a picturesque<br> remote location situated in northern Pakistan,<br> near the base of Nanga Parbat,<br> the ninth-highest mountain in the world.</p>
-        <p class="fairy-2">Fairy Meadows is celebrated for its tranquil and <br>stunning environment, making it a favorite destination <br>for trekkers and nature lovers seeking an escape <br>into one of Pakistan’s most beautiful natural settings.</p>
+          <img
+            src="assets/images/image-2.jpeg"
+            alt="logo-pic"
+            class="statement-pics"
+          />
         </div>
-    </div>
-</body>
+        <div>
+          <img
+            src="assets/images/image-1.png"
+            alt="logo-pic"
+            class="statement-pics"
+          />
+        </div>
+        <div>
+          <img
+            src="assets/images/image-4.jpeg"
+            alt="logo-pic"
+            class="statement-pics"
+          />
+        </div>
+        <div>
+          <img
+            src="assets/images/image-2.jpeg"
+            alt="logo-pic"
+            class="statement-pics"
+          />
+        </div>
+        <div>
+          <img
+            src="assets/images/image-6.jpeg"
+            alt="logo-pic"
+            class="statement-pics"
+          />
+        </div>
+        <div>
+          <img
+            src="assets/images/image-7.png"
+            alt="logo-pic"
+            class="statement-pics"
+          />
+        </div>
+        <div>
+          <img
+            src="assets/images/image-8.png"
+            alt="logo-pic"
+            class="statement-pics"
+          />
+        </div>
+        <div>
+          <img
+            src="assets/images/image-1.png"
+            alt="logo-pic"
+            class="statement-pics"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- img section -->
+    <section class="img-container">
+      <div>
+        <img src="pic-1.webp" class="photos" />
+      </div>
+      <div>
+        <img src="pic-2.webp" class="photos" />
+      </div>
+      <div>
+        <img src="pic-3.webp" class="photos" />
+      </div>
+    </section>
+
+    <!-- video content section -->
+    <section class="cont-video">
+      <video src="fairy-meadows.mp4" muted loop autoplay></video>
+      <div>
+        <h4 class="fairy-0">Healthy Environment</h4>
+        <p class="fairy-1">
+          Fairy Meadows is a picturesque<br />
+          remote location situated in northern Pakistan,<br />
+          near the base of Nanga Parbat,<br />
+          the ninth-highest mountain in the world.
+        </p>
+        <p class="fairy-2">
+          Fairy Meadows is celebrated for its tranquil and <br />stunning
+          environment, making it a favorite destination <br />for trekkers and
+          nature lovers seeking an escape <br />into one of Pakistan’s most
+          beautiful natural settings.
+        </p>
+      </div>
+    </section>
+
+    <!-- travel section -->
+    <section>
+      <div class="main-img-cont">
+        <img src="image-00.avif" class="main-img" />
+        <div>
+          <h4 class="anime-0">Route</h4>
+          <p class="anime-1">Pakistan Travel</p>
+          <p class="anime-2">
+            The trek to <b>Fairy Meadows</b> is<br />
+            popular among hikers due to its <br />relatively moderate difficulty
+            and <br />breathtaking scenery.
+          </p>
+          <button class="anime-3">Fairy Meadows</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews -->
+    <section class="review">
+      <div class="review-1">Beautiful World</div>
+      <div class="table-text">
+        <div class="text-1">
+          <i>
+            <q>
+              While the trek is relatively moderate, some <br />physical
+              preparation and stamina are helpful.<br />
+              Walking and hiking can aid in acclimatization<br />
+              and endurance.Allow time for acclimatization, <br />
+              if traveling from lower altitudes to prevent <br />altitude
+              sickness.</q
+            ></i
+          >
+          <div class="text-01">_Mr. Khan<br />Pakistan</div>
+        </div>
+        <div class="text-1">
+          <i
+            ><q>
+              Ensure you have the necessary permits<br />
+              for trekking in the area. The region is <br />located in a
+              protected area, and permits may <br />be required. It’s advisable
+              to check with l<br />ocal authorities or trekking agencies for
+              current<br />
+              regulations and permit requirements.</q
+            ></i
+          >
+          <div class="text-01">_Mr. Khan<br />Pakistan</div>
+        </div>
+        <div class="text-1">
+          <i
+            ><q>
+              At Fairy Meadows, there are various<br />
+              camping options, including basic campsites<br />
+              and luxurious “eco-cabins” or <br />camping huts.</q
+            ></i
+          >
+          <div class="text-01">_Mr. Khan<br />Pakistan</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- views frame section -->
+    <section>
+      <div class="frame-0">Views</div>
+      <div class="main-frame">
+        <div class="frame">
+          <img
+            class="frame-10"
+            src="assets/images/fairy-1.webp"
+            alt="mountains"
+          />
+
+          <div>
+            <h3 class="frame-heading">
+              The reflection lake of <b>Fairy Meadows.</b>
+            </h3>
+            <p>
+              The reflection pond in Fairy Meadows is a <br />highlight of this
+              extraordinary destination,<br />offering a stunning visual
+              experience that<br />captures the essence of the region's
+              breathtking<br />
+              landscape.
+            </p>
+          </div>
+        </div>
+        <div class="frame">
+          <img
+            class="frame-10"
+            src="assets/images/fairy-2.webp"
+            alt="mountains"
+          />
+
+          <div>
+            <h3 class="frame-heading">
+              The reflection lake of <b>Fairy Meadows.</b>
+            </h3>
+            <p>
+              The reflection pond in Fairy Meadows is a <br />highlight of this
+              extraordinary destination,<br />offering a stunning visual
+              experience that<br />captures the essence of the region's
+              breathtking<br />
+              landscape.
+            </p>
+          </div>
+        </div>
+        <div class="frame">
+          <img
+            class="frame-10"
+            src="assets/images/fairy-3.webp"
+            alt="mountains"
+          />
+
+          <div>
+            <h3 class="frame-heading">
+              The reflection lake of <b>Fairy Meadows.</b>
+            </h3>
+            <p>
+              The reflection pond in Fairy Meadows is a <br />highlight of this
+              extraordinary destination,<br />offering a stunning visual
+              experience that<br />captures the essence of the region's
+              breathtking<br />
+              landscape.
+            </p>
+          </div>
+        </div>
+        <div class="frame">
+          <img
+            class="frame-10"
+            src="assets/images/fairy-2.webp"
+            alt="mountains"
+          />
+
+          <div>
+            <h3 class="frame-heading">
+              The reflection lake of <b>Fairy Meadows.</b>
+            </h3>
+            <p>
+              The reflection pond in Fairy Meadows is a <br />highlight of this
+              extraordinary destination,<br />offering a stunning visual
+              experience that<br />captures the essence of the region's
+              breathtking<br />
+              landscape.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery photos section -->
+    <section>
+      <div class="main-gallery">
+        <div class="gallery-text">Pictures</div>
+        <div class="gallery-photos">
+          <div>
+            <img
+              src="assets/images/fairy-1.webp"
+              alt="mountains"
+              class="gallery-items"
+            />
+          </div>
+          <div>
+            <img
+              src="assets/images/fairy-2.webp"
+              alt="mountains"
+              class="gallery-items"
+            />
+          </div>
+          <div>
+            <img
+              src="assets/images/fairy-3.webp"
+              alt="mountains"
+              class="gallery-items"
+            />
+          </div>
+          <div>
+            <img
+              src="assets/images/fairy-4.webp"
+              alt="mountains"
+              class="gallery-items"
+            />
+          </div>
+          <div>
+            <img
+              src="assets/images/fairy-4.webp"
+              alt="mountains"
+              class="gallery-items"
+            />
+          </div>
+          <div>
+            <img
+              src="assets/images/fairy-1.webp"
+              alt="mountains"
+              class="gallery-items"
+            />
+          </div>
+        </div>
+
+        <div class="gallery-text-2">Social</div>
+        <div class="main-card">
+          <div class="main-card-1">
+            <img
+              src="assets/images/fairy-1.webp"
+              alt="mountains"
+              class="card-1"
+            />
+            <div class="icon-insta">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <h2 class="card-1-text">Fairy Meadows</h2>
+            <p class="card-1-text2">
+              The meadows themselves are covered in vibrant wildflowers during
+              the summer months, adding splashes of color to the verdant
+              landscape.
+            </p>
+            <div class="card-1-footer">
+              <img
+                src="assets/images/image-3.webp"
+                alt="harvard"
+                class="card-1-img"
+              />
+              <a href="#fairy" class="card-text3">@FAIRY</a>
+              <a href="#date" class="card-date">AUG 28, 2024</a>
+              <div class="card-icons">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-card-2">
+            <img
+              src="assets/images/fairy-2.webp"
+              alt="mountains"
+              class="card-1"
+            />
+            <div class="icon-insta">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <h2 class="card-1-text">Fairy Meadows</h2>
+            <p class="card-1-text2">
+              The meadows themselves are covered in vibrant wildflowers during
+              the summer months, adding splashes of color to the verdant
+              landscape.
+            </p>
+            <div class="card-1-footer">
+              <img
+                src="assets/images/image-3.webp"
+                alt="harvard"
+                class="card-1-img"
+              />
+              <a href="#fairy" class="card-text3">@FAIRY</a>
+              <a href="#date" class="card-date">AUG 27, 2024</a>
+              <div class="card-icons">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-card-3">
+            <img
+              src="assets/images/fairy-3.webp"
+              alt="mountains"
+              class="card-3"
+            />
+            <div class="icon-insta">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <h2 class="card-1-text">Fairy Meadows</h2>
+            <p class="card-1-text2">
+              The meadows themselves are covered in vibrant wildflowers during
+              the summer months, adding splashes of color to the verdant
+              landscape.
+            </p>
+            <div class="card-1-footer">
+              <img
+                src="assets/images/image-3.webp"
+                alt="harvard"
+                class="card-1-img"
+              />
+              <a href="#fairy" class="card-text3">@FAIRY</a>
+              <a href="#date" class="card-date">AUG 26, 2024</a>
+              <div class="card-icons">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-card-4">
+            <img
+              src="assets/images/fairy-1.webp"
+              alt="mountains"
+              class="card-1"
+            />
+            <div class="icon-insta">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <h2 class="card-1-text">Fairy Meadows</h2>
+            <p class="card-1-text2">
+              The meadows themselves are covered in vibrant wildflowers during
+              the summer months, adding splashes od colour to verdant landscape.
+            </p>
+            <div class="card-1-footer">
+              <img
+                src="assets/images/image-3.webp"
+                alt="harvard"
+                class="card-1-img"
+              />
+              <a href="#fairy" class="card-text3">@FAIRY</a>
+              <a href="#date" class="card-date">AUG 14, 2024</a>
+              <div class="card-icons">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mission section -->
+    <section class="mission">
+      <div class="mission-heading">Mission</div>
+      <div class="heading-2">
+        The reflection is especially striking during the early morning or late
+        evening when the light softens, and the surrounding landscape is bathed
+        in a golden or pinkish hue.The meadows themselves are covered in vibrant
+        wildflowers during the summer months, adding splashes of color to the
+        verdant landscape.
+      </div>
+      <div class="bottom-mission">
+        <div class="bottom-mission-text1"><h2>Take action</h2></div>
+        <div class="bottom-mission-text2">...</div>
+        <div class="main-buttons">
+          <button class="buttons-items">Visit</button>
+          <button class="buttons-items">Tour</button>
+          <button class="buttons-items">Home</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="footer-1">
+        <div class="footer-1-class">
+          <img
+            src="assets/images/like-logo.webp"
+            alt="logo"
+            class="footer-logo"
+          />
+          <h2 class="footer-1-text">FAIRY MEADOWS</h2>
+        </div>
+        <div class="main-footer-icons">
+          <div class="footer-20">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main-content">
+        <div class="footer-about">
+          <h2 class="footer-about-text-1">ABOUT</h2>
+          <p class="footer-about-text">
+            The meadows themselves are covered in vibrant wildflowers during the
+            summer months, adding splashes of color to the verdant landscape.The
+            area offers an awe-inspiring view of this towering peak.
+          </p>
+          <pre class="about-address-1">
+Tatu Village
+Gilgit Baltistan
+        </pre
+          >
+          <pre class="about-address-2">
+Skardu
+Gilgit Baltistan
+                  </pre
+          >
+        </div>
+        <div class="footer-contact">
+          <h2 class="footer-contact-heading">CONTACT</h2>
+          <p>Upper Meadows: 123-456-789</p>
+          <p>Lower Meadows: 123-456-789</p>
+          <p>Summer: 123-456-789</p>
+          <p>Winter: 123-456-789</p>
+        </div>
+        <div class="footer-links">
+          <h2 class="quick-link-text">QUICK LINKS</h2>
+          <div class="links-content">
+            <a href="#contact">Contact</a>
+            <a href="#apply">Apply</a>
+            <a href="#visit">Visit</a>
+          </div>
+          <div class="search-container">
+            <input type="text" placeholder="Search" class="search-input" />
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-end">
+        <div class="footer-copyright">
+          <h5>Privacy Policy</h5>
+          <h5>&copy;Fairy Meadows</h5>
+        </div>
+        <div class="footer-end-logo">
+          <img
+            src="assets/images/image-1.png"
+            alt="logo"
+            class="bottom-end-pic"
+          />
+          <img
+            src="assets/images/image-2.jpeg"
+            alt="logo"
+            class="bottom-end-pic"
+          />
+          <img
+            src="assets/images/image-3.webp"
+            alt="logo"
+            class="bottom-end-pic"
+          />
+        </div>
+      </div>
+    </footer>
+    <div style="height: 50px"></div>
+    <script>
+      // JavaScript to toggle the menu
+      document
+        .getElementById("hamburger")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("menu");
+          if (menu.classList.contains("hide")) {
+            menu.classList.remove("hide");
+          } else {
+            menu.classList.add("hide");
+          }
+        });
+    </script>
+  </body>
 </html>
